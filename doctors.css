@@ -1,0 +1,501 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    --offset: 20px; /*значение отступов между колонками*/
+    --basic-blue: #0284C7; /*основной синий,заголовки отзывы, рамка наши отделения*/
+    --blue-footer:#F0F9FF; /*footer, цвет текста на кнопке, текст на фото в услугах*/
+    --light-blue:#E0F2FE; /*светло-голубой*/
+    --header-color:#0369A1; /*цвет заголовков*/
+    --button-color:#0EA5E9; /* основной цвет кнопки*/
+    --about-clinic-text:#171717; /*цвет текста в разделе о клинике*/
+    --text-menu:#FFFFFF; /*текст меню, фон отзывы*/
+    --text-reviews:#737373; /*текст отзывы*/
+    --border-reviews:#E5E5E5; /*цвет рамки отзывы*/
+    --heder-text-color:#0C4A6E; /*цвет текста в заголовке, цвет заголовка в разделе о клиние*/
+    --text-footer:#075985; /*цвет текста footer, наши отделения*/
+    --text-input:#737373; /*текст input и раздела специалисты*/
+    --text-doctor:#404040; /*текст доктора*/
+}
+
+.header_menu_container {
+    background-color: var(--basic-blue);
+    display: flex;
+      
+}
+
+.header_navigation {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header_name {
+    font-size: 26px;
+    color: var( --text-menu);
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    padding: 10px;
+}
+
+.header_menu {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: var( --text-menu); 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header_menu_blok {
+   padding: 10px;
+}
+
+.mobile_menu {
+    display: none;
+    position: absolute;
+}
+
+.doctors_of_clinic {
+    margin: 100px auto 50px;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.doctors_of_clinic_title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 123%;
+    text-align: center;
+    color: var(--header-color);
+    margin-bottom: 40px;
+}
+
+.doctors_of_clinic_text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: var(--text-reviews);
+    margin-bottom: 50px;
+}
+
+.doctors_of_clinic_input {
+    display: flex;
+    justify-content: left;
+    border: 1px solid #BAE6FD;
+    border-radius: 20px;
+    padding: 20px;    
+    width: calc(100% / 12 * 10 - var(--offset));
+    margin: auto;
+}
+
+#doctors_of_clinic_input {
+    border: none;
+    font-weight: 400;
+    font-size: 19px;
+    text-align: left;
+    line-height: 38px;
+    color: var(--text-input);
+    padding: 0 20px;
+    outline: none;
+}
+
+.doctors_of_clinic_icon {
+    font-size: 26px;
+    color:var(--text-input);
+    padding: 5px 15px;
+    border-right: 3px solid var(--text-input);
+}
+
+.doctors {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.doctor {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    width: calc(100% / 12 * 4 - var(--offset));
+    padding: 50px 10px;
+
+}
+
+.doctor_photo {
+    box-shadow: 2px 2px 4px rgba(115, 115, 115, 0.25);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom:20px;
+    
+}
+
+.doctor_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color:var(--text-doctor);
+}
+
+.boldtext {
+    font-weight: 700;
+}
+
+button {
+    background-color: var(--text-menu);
+    border: 1px solid var(--basic-blue);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--basic-blue);
+    padding: 10px 40px;    
+    width: 70%;
+}
+
+img {
+    object-fit: cover;
+    object-position: top right;
+}
+
+footer {
+    background: var(--blue-footer);
+    margin-top: 50px;
+}
+
+.footer {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    padding: 50px 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--text-footer);
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_top_facebook_icon {
+    color: var(--basic-blue);
+    font-size: 25px;
+    padding: 0 10px;
+}
+
+.footer_top_text {
+    width: 45%;
+}
+
+.footer_top_facebook {
+    display: flex;
+}
+
+.footer_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.footer_bottom_blok {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer_botton_title {
+    display: flex;
+   
+}
+
+.icon_footer {
+    color: var(--basic-blue); 
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.footer_bottom_license {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    color: var(--text-footer);
+    text-align: right;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .header_name {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .header_menu {       
+        display: none;
+    }
+
+    .heder_title {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .heder_container {
+        padding: 70px 15px;
+    }
+
+    .dropbtn {
+        background-color: #0284C7;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 120px;
+      }
+    
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      }
+    
+      .mobile_menu {
+        position: relative;
+        display: inline-block;
+      }
+    
+      .mobile_menu_content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 100px;
+        overflow: hidden;
+      }
+    
+      .mobile_menu_content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: underline;
+        display: block;
+      }
+      
+      .mobile_menu a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+
+      .doctors_of_clinic_title {
+        font-size: 22px; 
+      }
+
+      .doctors_of_clinic {
+          margin-top: 40px;
+          padding: 15px;
+      }
+
+      .doctors_of_clinic_text {
+        font-size: 16px;
+        line-height: 23px;
+      }
+
+      .doctors_of_clinic_input {
+        width: 100%;
+        padding: 10px;
+      }
+
+      #doctors_of_clinic_input {
+        font-size: 16px;
+        width: 100%;
+      }
+
+      .doctors {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+      }
+
+      .doctor {
+        width: calc(100% - var(--offset));
+        padding: 20px 0;
+      }
+
+      .doctor_text {
+        font-size: 16px;
+      }
+
+      button {
+        font-size: 16px;
+      }
+
+      .footer {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .footer_top_facebook_icon {
+        font-size: 20px;
+    }
+
+    .icon_footer {
+        font-size: 20px;
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+    }
+
+    .footer_bottom_blok {
+        margin: 15px 0;
+    }
+
+    .footer_bottom_license {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .header_name {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .header_menu {
+        display: none;
+    }
+
+    .heder_title {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .heder_container {
+        padding: 70px 15px;
+    }
+
+    .heder_text {
+        width: 70%;
+        line-height: 22px; 
+    }
+
+    .dropbtn {
+        background-color: #0284C7;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 120px;
+    }
+    
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+    }
+    
+    .mobile_menu {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .mobile_menu_content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 100px;
+        overflow: hidden;
+    }
+    
+    .mobile_menu_content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: underline;
+        display: block;
+    }
+      
+    .mobile_menu a:hover {background-color: #ddd;}
+      
+    .show {display: block;}
+
+    .doctors_of_clinic {
+        padding: 0 15px;
+        margin-top: 50px;
+    }
+
+    .doctors_of_clinic_title {
+        font-size: 22px; 
+    }
+
+    .doctors_of_clinic_text {
+        font-size: 18px;
+        line-height: 23px;
+      }
+
+    .doctors_of_clinic_input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .doctors {
+        justify-content: space-around;
+        padding: 20px 0 30px;
+    }
+
+    .doctor {
+        width: calc(100% / 2 - var(--offset));
+        padding: 20px 10px;
+        justify-content: space-between;    
+    }
+
+    .doctor_text {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px; 
+    }
+
+    footer {
+        margin-top: 0;
+    } 
+
+    .footer {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .footer_top_facebook_icon {
+        font-size: 20px;
+    }
+
+    .icon_footer {
+        font-size: 20px;
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+    }
+
+    .footer_bottom_blok {
+        margin: 15px 0;
+    }
+
+    .footer_bottom_license {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}

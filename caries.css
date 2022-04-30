@@ -1,0 +1,701 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    --offset: 20px; /*значение отступов между колонками*/
+    --basic-blue: #0284C7; /*основной синий,заголовки отзывы, рамка наши отделения*/
+    --blue-footer:#F0F9FF; /*footer, цвет текста на кнопке, текст на фото в услугах*/
+    --light-blue:#E0F2FE; /*светло-голубой*/
+    --header-color:#0369A1; /*цвет заголовков*/
+    --button-color:#0EA5E9; /* основной цвет кнопки*/
+    --about-clinic-text:#171717; /*цвет текста в разделе о клинике*/
+    --text-menu:#FFFFFF; /*текст меню, фон отзывы*/
+    --text-reviews:#737373; /*текст отзывы*/
+    --border-reviews:#E5E5E5; /*цвет рамки отзывы*/
+    --heder-text-color:#0C4A6E; /*цвет текста в заголовке, цвет заголовка в разделе о клиние*/
+    --text-footer:#075985; /*цвет текста footer, наши отделения*/
+    --text-caries:#0B4269; /*цвет текста в разделе лечение кариеса*/
+}
+
+.header_menu_container {
+    background-color: var(--basic-blue);
+    display: flex;
+    
+}
+
+.header_navigation {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_name {
+    font-size: 26px;
+    color: var( --text-menu);
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    padding: 10px;
+}
+
+.header_menu {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: var( --text-menu); 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header_menu_blok {
+   padding: 10px;
+}
+
+.heder_container_img {
+    background-image: url(images/hero.png);
+    background-size: cover;
+    background-position: center top;    
+}
+
+.heder_container {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    padding: 150px 15px;
+}
+
+.heder_title {
+    display: block;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 59px;
+    color: #262626;
+    width: calc(100% / 12 * 6 - var(--offset));
+    padding: 30px 0px;
+}
+
+.colortext {
+    color: var(--basic-blue);
+}
+
+.heder_text {
+    display: block;
+    width: calc(100% / 2 - var(--offset));
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;  
+    text-align: left;
+    color: var(--heder-text-color);
+    padding: 30px 0px;
+}
+
+.button {
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--blue-footer);
+    padding: 10px 70px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mobile_menu {
+    display: none;
+    position: absolute;
+}
+
+.caries {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    padding: 100px 15px;
+}
+
+.caries_title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: var(--header-color);    
+}
+
+.caries_blok {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.caries_text {
+    width: calc(100% / 12 * 7 - var(--offset));
+}
+
+.text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: justify;
+    color: var(--text-caries);        
+}
+
+.caries_photo {
+    background: linear-gradient(0deg, rgba(2, 132, 199, 0.1), rgba(2, 132, 199, 0.1)), url(images/patient.png);
+    width: calc(100% / 12 * 5 - var(--offset)); 
+    background-size: cover;
+    background-position: left top;    
+    box-shadow: 2px 4px 4px rgba(115, 115, 115, 0.25);
+    border-radius: 20px;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 700;  
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: var(--text-footer);
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.prices_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    color: var(--header-color); 
+    padding: 30px 0 50px;   
+}
+
+.prices_1 {
+    background-color: var(--blue-footer);
+    border-radius: 30px;
+    padding: 30px 0 40px 30px;
+    width: 100%;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.colortext_blue {
+    color: var(--button-color);
+}
+
+.colortext_green {
+    color: rgba(31, 158, 31, 0.717);
+}
+
+.prices_2 {
+    background-color: var(--light-blue);
+    border-radius: 30px;
+    padding: 30px 0 40px 30px;
+    width: 100%;
+    margin: 10px 0;
+}
+.service_title {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+    color: var(--header-color);
+    padding: 40px 0px;
+    margin-top: 50px 0;
+}
+
+.service {
+    background-color: var(--basic-blue);
+    padding: 50px 15px;  
+}
+
+.service_container {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.service_item_icon {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 50px;
+    color: var(--light-blue);
+}
+
+.service_item_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_item_container_1 {
+    background:linear-gradient(to right,  rgba(69, 151, 199, 0.57) 18%, transparent 100%), url(images/service-3.png);
+    background-size: cover;
+    background-position: center top; 
+    width: calc(100% / 3 - var(--offset));
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+
+.service_item_container_2 {
+    background:linear-gradient(to right,  rgba(69, 151, 199, 0.57) 18%, transparent 100%), url(images/service-2.png);
+    background-size: cover;
+    background-position: center top; 
+    width: calc(100% / 3 - var(--offset));
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+
+.service_item_container_3 {
+    background:linear-gradient(to right,  rgba(69, 151, 199, 0.57) 18%, transparent 100%), url(images/service-1.png);
+    background-size: cover;
+    background-position: center top; 
+    width: calc(100% / 3 - var(--offset));
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+
+.namber {
+    display: block;
+    text-align: start;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--text-menu);
+    padding-bottom: 40px;
+}
+
+.service_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.service_item_content {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--blue-footer);
+}
+
+.service_item_text {
+    flex-grow: 2;
+    color: var(--blue-footer);
+    width: 70%;
+    padding-bottom: 15px;
+    align-self: flex-end;
+}
+
+.service_item_arrow {
+    
+    color: var(--blue-footer);
+    font-size: 30px;
+    align-self: flex-end;
+    padding-bottom: 10px;
+}
+
+footer {
+    background: var(--blue-footer);
+    margin-top: 180px;
+}
+
+.footer {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    padding: 50px 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--text-footer);
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_top_facebook_icon {
+    color: var(--basic-blue);
+    font-size: 25px;
+    padding: 0 10px;
+}
+
+.footer_top_text {
+    width: 45%;
+}
+
+.footer_top_facebook {
+    display: flex;
+}
+
+.footer_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.footer_bottom_blok {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer_botton_title {
+    display: flex;   
+}
+
+.icon_footer {
+    color: var(--basic-blue); 
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.footer_bottom_license {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    color: var(--text-footer);
+    text-align: right;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .header_name {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .header_menu {       
+        display: none;
+    }
+
+    .heder_title {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .heder_container {
+        padding: 70px 15px;
+    }
+
+    .heder_text {
+        width: 100%;
+        line-height: 22px; 
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 50px;
+    }
+
+    .dropbtn {
+        background-color: #0284C7;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 120px;
+      }
+    
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      }
+    
+      .mobile_menu {
+        position: relative;
+        display: inline-block;
+      }
+    
+      .mobile_menu_content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 100px;
+        overflow: hidden;
+      }
+    
+      .mobile_menu_content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: underline;
+        display: block;
+      }
+      
+      .mobile_menu a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+
+      .caries_title,
+      .service_title {
+        font-size: 22px;
+    }
+
+    .caries {
+        padding: 20px 15px;
+    }
+
+    .caries_blok {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .caries_text {
+        width: 100%;
+    }
+
+    .text {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .caries_photo {
+        width: 100%;
+        height: 300px;
+        margin: 10px 0 0;
+    }
+
+    .prices {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .prices_title {
+        font-size: 22px;
+        line-height: 45px;
+        padding-bottom: 30px; 
+    }
+
+    .prices_1 {
+        padding:15px;
+        text-align: center;
+    }
+
+    .prices_2 {
+        padding:15px;
+        text-align: center;
+    }
+
+    .service_item_container {
+        flex-direction: column;
+        align-items: center;     
+    }
+
+    .service_item_container_1,
+    .service_item_container_2,
+    .service_item_container_3 {
+        width:70%;
+        margin: 10px 0;
+    }
+
+    footer {
+        margin-top: 0;
+    } 
+
+    .footer {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .footer_top_facebook_icon {
+        font-size: 20px;
+    }
+
+    .icon_footer {
+        font-size: 20px;
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+    }
+
+    .footer_bottom_blok {
+        margin: 15px 0;
+    }
+
+    .footer_bottom_license {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .header_name {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .header_menu {
+        display: none;
+    }
+
+    .heder_title {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .heder_container {
+        padding: 70px 15px;
+    }
+
+    .heder_text {
+        width: 70%;
+        line-height: 22px; 
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 50px;
+    }
+
+    .dropbtn {
+        background-color: #0284C7;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 120px;
+    }
+    
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+    }
+    
+    .mobile_menu {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .mobile_menu_content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 100px;
+        overflow: hidden;
+    }
+    
+    .mobile_menu_content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: underline;
+        display: block;
+    }
+      
+    .mobile_menu a:hover {background-color: #ddd;}
+      
+    .show {display: block;}
+
+    .caries_title,
+    .service_title {
+        font-size: 25px;
+    }
+
+    .caries {
+        padding: 20px 15px;
+    }
+
+    .caries_blok {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .caries_text {
+        width: 100%;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .caries_photo {
+        width: 100%;
+        height: 500px;
+        margin: 10px 0 0;
+    }
+
+    .prices {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .prices_title {
+        font-size: 22px;
+        line-height: 45px;
+        padding-bottom: 30px; 
+    }
+
+    .prices_1 {
+        padding:15px;
+        text-align: center;
+    }
+
+    .prices_2 {
+        padding:15px;
+        text-align: center;
+    }
+
+    .service_item_container {
+        flex-direction: column;
+        align-items: center;     
+    }
+
+    .service_item_container_1,
+    .service_item_container_2,
+    .service_item_container_3 {
+        width:70%;
+        margin: 10px 0;
+    }
+
+    footer {
+        margin-top: 0;
+    } 
+
+    .footer {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .footer_top_facebook_icon {
+        font-size: 20px;
+    }
+
+    .icon_footer {
+        font-size: 20px;
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+    }
+
+    .footer_bottom_blok {
+        margin: 15px 0;
+    }
+
+    .footer_bottom_license {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}

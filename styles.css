@@ -1,0 +1,740 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    --offset: 20px; /*значение отступов между колонками*/
+    --basic-blue: #0284C7; /*основной синий,заголовки отзывы, рамка наши отделения*/
+    --blue-footer:#F0F9FF; /*footer, цвет текста на кнопке, текст на фото в услугах*/
+    --light-blue:#E0F2FE; /*светло-голубой*/
+    --header-color:#0369A1; /*цвет заголовков*/
+    --button-color:#0EA5E9; /* основной цвет кнопки*/
+    --about-clinic-text:#171717; /*цвет текста в разделе о клинике*/
+    --text-menu:#FFFFFF; /*текст меню, фон отзывы*/
+    --text-reviews:#737373; /*текст отзывы*/
+    --border-reviews:#E5E5E5; /*цвет рамки отзывы*/
+    --heder-text-color:#0C4A6E; /*цвет текста в заголовке, цвет заголовка в разделе о клиние*/
+    --text-footer:#075985; /*цвет текста footer, наши отделения*/
+}
+
+.header_menu_container {
+    background-color: var(--basic-blue);
+    display: flex;
+    
+}
+
+.header_navigation {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header_name {
+    font-size: 26px;
+    color: var( --text-menu);
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    padding: 10px;
+}
+
+.header_menu {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: var( --text-menu); 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header_menu_blok {
+   padding: 10px;
+}
+
+.heder_container_img {
+    background-image: url(images/hero.png);
+    background-size: cover;
+    background-position: center top;    
+}
+
+.heder_container {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    padding: 150px 15px;
+}
+
+.heder_title {
+    display: block;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 59px;
+    color: #262626;
+    width: calc(100% / 2 - var(--offset));
+    padding: 30px 0px;
+}
+
+.colortext {
+    color: var(--basic-blue);
+}
+
+.heder_text {
+    display: block;
+    width: calc(100% / 2 - var(--offset));
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;  
+    text-align: left;
+    color: var(--heder-text-color);
+    padding: 30px 0px;
+}
+
+.button {
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--blue-footer);
+    padding: 10px 70px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mobile_menu {
+    display: none;
+    position: absolute;
+}
+
+.service_title {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+    color: var(--header-color);
+    padding: 40px 0px;
+}
+
+.service {
+    background-color: var(--basic-blue);
+    padding: 50px 15px;
+}
+
+.service_container {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.service_item_icon {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 50px;
+    color: var(--light-blue);
+}
+
+.service_item_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_item_container_1 {
+    background:linear-gradient(to right,  rgba(69, 151, 199, 0.57) 18%, transparent 100%), url(images/service-3.png);
+    background-size: cover;
+    background-position: center top; 
+    width: calc(100% / 3 - var(--offset));
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+
+.service_item_container_2 {
+    background:linear-gradient(to right,  rgba(69, 151, 199, 0.57) 18%, transparent 100%), url(images/service-2.png);
+    background-size: cover;
+    background-position: center top; 
+    width: calc(100% / 3 - var(--offset));
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+
+.service_item_container_3 {
+    background:linear-gradient(to right,  rgba(69, 151, 199, 0.57) 18%, transparent 100%), url(images/service-1.png);
+    background-size: cover;
+    background-position: center top; 
+    width: calc(100% / 3 - var(--offset));
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+
+.namber {
+    display: block;
+    text-align: start;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--text-menu);
+    padding-bottom: 40px;
+}
+
+.service_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.service_item_content {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--blue-footer);
+}
+
+.service_item_text {
+    flex-grow: 2;
+    color: var(--blue-footer);
+    width: 70%;
+    padding-bottom: 15px;
+    align-self: flex-end;
+}
+
+.service_item_arrow {
+    
+    color: var(--blue-footer);
+    font-size: 30px;
+    align-self: flex-end;
+    padding-bottom: 10px;
+}
+
+.about_clinic_container {
+    background-image: url(images/background-1.png);
+    background-size: cover;
+    background-position: center top;
+}
+
+.about_clinic {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    padding: 30px 15px;
+}
+
+.about_clinic_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    color: var(--heder-text-color);  
+}
+
+.about_clinic_text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: justify;
+    color: var(--about-clinic-text);
+    padding: 15px 0px;
+}
+
+.about_clinic_button {
+    text-align: right;
+    margin: 50px 0px;
+}
+
+.reviews_container {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.reviews_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    color: var(--header-color);
+    margin: 50px 0px;
+    
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -10px 80px;
+    padding: 0 15px;
+}
+
+.reviews_people {
+    display: flex;
+    width: calc(100% / 2 - var(--offset));
+    border: 1px solid var(--border-reviews);
+    border-radius: 20px;
+    padding: 20px;
+    margin: calc(var(--offset) / 2);
+}
+
+.reviews_people_photo {
+    align-self: center;
+}
+
+.reviews_people_content {
+    margin-left: 20px;
+}
+
+.reviews_people_name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--basic-blue);
+}
+
+.reviews_people_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--text-reviews);
+    padding-top: 20px;
+}
+
+.branches_container {
+    background: linear-gradient(0deg, rgba(240, 249, 255, 0.8), rgba(240, 249, 255, 0.8)), url(images/map-background.png)
+}
+
+.branches_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    color: var(--header-color);
+    padding: 30px 0;
+} 
+
+.branches {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 15px 50px;
+}
+
+.branch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--basic-blue);
+    border-radius: 25px;
+    box-shadow: 0px 2px 4px rgba(115, 115, 115, 0.25);
+    width: calc(100% / 3 - var(--offset));
+    padding: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--text-footer);
+    background: var(--text-menu);
+}
+
+.branch_adress {
+    display: flex;
+    padding: 15px 0;
+}
+
+.icon {
+    color: var(--basic-blue); 
+    font-size: 25px;
+    padding: 10px;
+}
+
+.branch_working_mode {
+    display: flex;
+    padding: 15px 0 50px;
+}
+
+.boldtext {
+    font-weight: 600;
+}
+
+.branch_phone {
+    padding-left: 30px;
+    font-weight: 600
+}
+
+footer {
+    background: var(--blue-footer);
+}
+
+.footer {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    padding: 50px 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--text-footer);
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_top_facebook_icon {
+    color: var(--basic-blue);
+    font-size: 25px;
+    padding: 0 10px;
+}
+
+.footer_top_text {
+    width: 45%;
+}
+
+.footer_top_facebook {
+    display: flex;
+}
+
+.footer_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.footer_bottom_blok {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer_botton_title {
+    display: flex;
+   
+}
+
+.icon_footer {
+    color: var(--basic-blue); 
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.footer_bottom_license {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    color: var(--text-footer);
+    text-align: right;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .header_name {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .header_menu {       
+        display: none;
+    }
+
+    .heder_title {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .heder_container {
+        padding: 70px 15px;
+    }
+
+    .heder_text {
+        width: 100%;
+        line-height: 22px; 
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 50px;
+    }
+
+    .dropbtn {
+        background-color: #0284C7;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 120px;
+      }
+    
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      }
+    
+      .mobile_menu {
+        position: relative;
+        display: inline-block;
+      }
+    
+      .mobile_menu_content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 100px;
+        overflow: hidden;
+      }
+    
+      .mobile_menu_content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: underline;
+        display: block;
+      }
+      
+      .mobile_menu a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+
+    .service_title,
+    .about_clinic_title,
+    .reviews_title,
+    .branches_title {
+        font-size: 22px;
+    }
+
+    .service_item_container {
+        flex-direction: column;
+        align-items: center;     
+    }
+
+    .service_item_container_1,
+    .service_item_container_2,
+    .service_item_container_3 {
+        width:70%;
+        margin: 10px 0;
+    }
+
+    .about_clinic_text {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .reviews_people {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .reviews_people_content {
+        margin-left: 0;
+    }
+
+    .reviews_people_name {
+        text-align: center;
+    }
+
+    .reviews_people_text {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .branches {
+        justify-content: center;
+    }
+
+    .branch {
+        width: 80%;
+        margin: 10px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .footer {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .footer_top_facebook_icon {
+        font-size: 20px;
+    }
+
+    .icon_footer {
+        font-size: 20px;
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+    }
+
+    .footer_bottom_blok {
+        margin: 15px 0;
+    }
+
+    .footer_bottom_license {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .header_name {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .header_menu {
+        display: none;
+    }
+
+    .heder_title {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .heder_container {
+        padding: 70px 15px;
+    }
+
+    .heder_text {
+        width: 70%;
+        line-height: 22px; 
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 50px;
+    }
+
+    .dropbtn {
+        background-color: #0284C7;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 120px;
+      }
+    
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      }
+    
+      .mobile_menu {
+        position: relative;
+        display: inline-block;
+      }
+    
+      .mobile_menu_content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 100px;
+        overflow: hidden;
+      }
+    
+      .mobile_menu_content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: underline;
+        display: block;
+      }
+      
+      .mobile_menu a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+
+    .service_title,
+    .about_clinic_title,
+    .reviews_title,
+    .branches_title {
+        font-size: 25px;
+    }
+
+    .service_item_container {
+        flex-direction: column;
+        align-items: center;     
+    }
+
+    .service_item_container_1,
+    .service_item_container_2,
+    .service_item_container_3 {
+        width:70%;
+        margin: 10px 0;
+    }
+
+    .about_clinic_text {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .reviews_people {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .reviews_people_content {
+        margin-left: 0;
+    }
+
+    .reviews_people_name {
+        text-align: center;
+    }
+
+    .reviews_people_text {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .branches {
+        justify-content: center;
+    }
+
+    .branch {
+        width: 60%;
+        margin: 10px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .footer {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .footer_top_facebook_icon {
+        font-size: 20px;
+    }
+
+    .icon_footer {
+        font-size: 20px;
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+    }
+
+    .footer_bottom_blok {
+        margin: 15px 0;
+    }
+
+    .footer_bottom_license {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
