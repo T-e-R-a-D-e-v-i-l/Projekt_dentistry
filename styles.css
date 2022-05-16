@@ -480,7 +480,7 @@ footer {
         font-size: 16px;
         border: none;
         cursor: pointer;
-        width: 120px;
+        width: 150px;
       }
     
       .dropbtn:hover, .dropbtn:focus {
@@ -519,15 +519,17 @@ footer {
     }
 
     .service_item_container {
-        flex-direction: column;
-        align-items: center;     
+        overflow: auto;  
+    }
+    .service_item_icon {
+        display: none;
     }
 
     .service_item_container_1,
     .service_item_container_2,
     .service_item_container_3 {
-        width:70%;
-        margin: 10px 0;
+        min-width:60%;
+        margin: 10px;
     }
 
     .about_clinic_text {
@@ -667,15 +669,17 @@ footer {
     }
 
     .service_item_container {
-        flex-direction: column;
-        align-items: center;     
+        overflow: auto;  
+    }
+    .service_item_icon {
+        display: none;
     }
 
     .service_item_container_1,
     .service_item_container_2,
     .service_item_container_3 {
-        width:70%;
-        margin: 10px 0;
+        min-width:40%;
+        margin: 10px;
     }
 
     .about_clinic_text {
