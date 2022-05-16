@@ -276,7 +276,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 -10px 80px;
+    margin-bottom: 80px;
     padding: 0 15px;
 }
 
